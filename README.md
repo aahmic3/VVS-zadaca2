@@ -1,1 +1,1 @@
-# VVS-zada-a2
+# VVS-zadaća2
