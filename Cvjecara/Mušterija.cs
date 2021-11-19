@@ -78,9 +78,24 @@ namespace Cvjecara
         /// </summary>
         /// <param name="nagrada"></param>
         /// <returns></returns>
+       
+        //Uradila Dženeta Ahmić (18482)
         public bool NagradnaKupovina(Poklon nagrada)
         {
-            throw new NotImplementedException();
+            int i, stepen = 10;
+            for(i = 1; i <= 10; i++)
+            {
+                stepen *= 10;
+                if(stepen == ukupanBrojKupovina)
+                    break;
+            }
+            //samo ako je petlja prije prekinuta i uslov ispunjen
+            if(i != 11 && i*10 >= nagrada.PostotakPopusta * 100)
+            {
+                kupljeniPokloni.Add(nagrada);
+                return true;
+            }
+            throw new InvalidOperationException("Niste ostvarili pravo na nagradni poklon!");
         }
 
         #endregion
