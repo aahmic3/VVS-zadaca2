@@ -124,9 +124,37 @@ namespace Cvjecara
         /// </summary>
         /// <param name="kriterijKlijenta"></param>
         /// <returns></returns>
+        /// Uradila Azra Ahmić (18390)
         public double OdrediSvježinuCvijeća()
         {
-            throw new NotImplementedException();
+            double svjezina=5.0;
+           if((DateTime.Now-datumBranja).TotalDays<3)
+                return svjezina;
+            else
+            {
+                if (vrsta == Vrsta.Ruža)
+                {
+                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.2;
+                }
+                else if (vrsta == Vrsta.Neven)
+                {
+                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.3;
+                }
+                else if (vrsta == Vrsta.Margareta)
+                {
+                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.4;
+                }
+                 else if (vrsta == Vrsta.Orhideja)
+                {
+                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.5;
+                }
+                 else if (vrsta == Vrsta.Ljiljan)
+                {
+                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.6;
+                }
+            }
+           if(svjezina<0) svjezina=0;
+           return svjezina;
         }
 
         #endregion

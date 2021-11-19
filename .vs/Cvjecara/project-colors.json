@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "217b0765-ec49-4d3c-ba3b-f831b120b2a8": {
+      "ProjectGuid": "217b0765-ec49-4d3c-ba3b-f831b120b2a8",
+      "DisplayName": "Zadatak 2",
+      "ColorIndex": 0
+    },
+    "694e170a-7675-4c93-bb24-a450eac9d960": {
+      "ProjectGuid": "694e170a-7675-4c93-bb24-a450eac9d960",
+      "DisplayName": "Cvjecara",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
