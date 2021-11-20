@@ -10,7 +10,17 @@
       "ProjectGuid": "694e170a-7675-4c93-bb24-a450eac9d960",
       "DisplayName": "Cvjecara",
       "ColorIndex": 1
+    },
+    "b26b0455-6850-4e11-913b-08191bce5a09": {
+      "ProjectGuid": "b26b0455-6850-4e11-913b-08191bce5a09",
+      "DisplayName": "TestCvjecara",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

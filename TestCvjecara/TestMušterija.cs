@@ -77,5 +77,17 @@ namespace TestCvjecara
             Assert.IsTrue(m2.NagradnaKupovina(p1));
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void NedozvoljenPostotakPoklon()
+        {
+            Poklon poklon = new Poklon("rođendan", 0.0);
+
+        }
+        [TestMethod]
+        public void TestGeterŠifraPoklona()
+        {
+            StringAssert.Equals(p1.Šifra, "10000");
+        }
     }
 }
