@@ -129,7 +129,7 @@ namespace Cvjecara
         {
             double svjezina=5.0;
             double koeficijent=0;
-            int brojDana=(DateTime.Now - datumBranja).TotalDays-2;
+            int brojDana=(int)(DateTime.Now - datumBranja).TotalDays-2;
            if((DateTime.Now-datumBranja).TotalDays<3)
                 return svjezina;
             else
