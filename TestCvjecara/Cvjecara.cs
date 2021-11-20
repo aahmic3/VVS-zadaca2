@@ -7,18 +7,18 @@ using System.Collections.Generic;
 namespace TestCvjecara
 {
     [TestClass]
-    public class UnitTest1
+    public class Cvjecara
     {
-        Mušterija m1, m2, m3;
+        global::Cvjecara.Mušterija m1, m2, m3;
         Buket b1, b2, b3;
         Poklon p;
-        List<Mušterija> musterije;
+        List<global::Cvjecara.Mušterija> musterije;
         [TestInitialize]
         public void InicijalizacijaPrijeSvakogTesta()
         {
-            m1 = new Mušterija("Dženeta Ahmić");
-            m2 = new Mušterija("Nedina Muratović");
-            m3 = new Mušterija("Azra Ahmić");
+            m1 = new global::Cvjecara.Mušterija("Dženeta Ahmić");
+            m2 = new global::Cvjecara.Mušterija("Nedina Muratović");
+            m3 = new global::Cvjecara.Mušterija("Azra Ahmić");
             b1 = new Buket(55.0);
             b2 = new Buket(25.0);
             b3 = new Buket(30.0);
@@ -26,7 +26,7 @@ namespace TestCvjecara
             b2.DodajCvijet(new Cvijet(Vrsta.Orhideja, "Bosanski ljiljan", "Bijela", DateTime.Parse("03/11/2021"), 3));
             b3.DodajCvijet(new Cvijet(Vrsta.Orhideja, "orhideja", "Žuta", DateTime.Parse("10/11/2021"), 6));
             p = new Poklon("rođendan", 0.1);
-            musterije = new List<Mušterija> { m1, m2, m3 };
+            musterije = new List<global::Cvjecara.Mušterija> { m1, m2, m3 };
         }
 
         [TestMethod]
