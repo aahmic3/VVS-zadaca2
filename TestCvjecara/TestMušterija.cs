@@ -22,6 +22,45 @@ namespace TestCvjecara
             p3 = new Poklon("godišnjica", 0.3);
         }
         [TestMethod]
+        public void TestGetUkupranBrojKupovina()
+        {
+            m1.RegistrujKupovinu(b1, p1);
+            m1.RegistrujKupovinu(b1, p2);
+            Assert.AreEqual(m1.UkupanBrojKupovina, 2);
+        }
+        [TestMethod]
+        public void TestGetKupljeniPokloni()
+        {
+            m1.RegistrujKupovinu(b1, p1);
+            m1.RegistrujKupovinu(b1, p2);
+            m1.RegistrujKupovinu(b1, p3);
+            List<Poklon> pokloni = new List<Poklon> { p1, p2, p3 };
+            Assert.AreEqual(m1.KupljeniPokloni.Count, pokloni.Count);
+        }
+        [TestMethod]
+        [ExpectedException(typeof(NotSupportedException))]
+        public void TestPraznoImeMušterije()
+        {
+            m1.ImeIPrezime = "";
+        }
+        [TestMethod]
+        [ExpectedException(typeof(NotSupportedException))]
+        public void TestImeWhiteSpaceMušterije()
+        {
+            m1.ImeIPrezime = "   ";
+        }
+        [TestMethod]
+        public void TestGetIme()
+        {
+            Assert.AreEqual(m2.ImeIPrezime, "Miki Maus");
+        }
+        [TestMethod]
+        [ExpectedException(typeof(NotSupportedException))]
+        public void TestNullBuketIliPoklon()
+        {
+            m1.RegistrujKupovinu(null,null);
+        }
+            [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestNagradnaKupovinaNijeOstvarenaPoBrojuKupovina(){
             m1.NagradnaKupovina(p1);
