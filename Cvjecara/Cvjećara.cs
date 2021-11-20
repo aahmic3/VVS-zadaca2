@@ -159,11 +159,42 @@ namespace Cvjecara
         /// jer se najbolja mušterija u tom slučaju ne može tačno odrediti.
         /// </summary>
         /// <returns></returns>
+        /// 
+        ///radila: Nedina Muratović - 18530
         public Mušterija DajNajboljuMušteriju()
         {
-            throw new NotImplementedException();
+            if (mušterije.Count == 0) throw new InvalidOperationException("Još uvijek nemate mušterija!");
+            int brojCvijeca = 0;
+            int indeksMusterije = -1;
+            double maxCijena = 0;
+            bool provjeraNajMusterije = true;
+            for (int i = 0; i < mušterije.Count; i++)
+            {
+                int provjeriBrojCvijeca = 0;
+                double provjeriCijenu = 0;
+                for (int j = 0; j < mušterije[i].KupljeniBuketi.Count; j++)
+                {
+                    provjeriBrojCvijeca += mušterije[i].KupljeniBuketi[j].Cvijeće.Count;
+                    provjeriCijenu += mušterije[i].KupljeniBuketi[j].Cijena;
+                }
+                if (provjeriBrojCvijeca > brojCvijeca || (provjeriBrojCvijeca == brojCvijeca && provjeriCijenu.CompareTo(maxCijena)>0))
+                {
+                    brojCvijeca = provjeriBrojCvijeca;
+                    indeksMusterije = i;
+                    maxCijena = provjeriCijenu;
+                    provjeraNajMusterije = true;
+                }
+                else if (provjeriBrojCvijeca == brojCvijeca && provjeriCijenu.CompareTo(maxCijena)==0)
+                {
+                    provjeraNajMusterije = false;
+                }
+            }
+            if (provjeraNajMusterije == false) throw new InvalidOperationException("Najbolja mušterija se ne može odrediti!");
+            return mušterije[indeksMusterije];
+            }
+
         }
 
         #endregion
     }
-}
+
