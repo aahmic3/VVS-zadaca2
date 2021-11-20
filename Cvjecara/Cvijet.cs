@@ -128,31 +128,39 @@ namespace Cvjecara
         public double OdrediSvježinuCvijeća()
         {
             double svjezina=5.0;
+            double koeficijent=0;
+            int brojDana=(DateTime.Now - datumBranja).TotalDays-2;
            if((DateTime.Now-datumBranja).TotalDays<3)
                 return svjezina;
             else
             {
                 if (vrsta == Vrsta.Ruža)
                 {
-                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.2;
+                    koeficijent=0.2;
                 }
                 else if (vrsta == Vrsta.Neven)
                 {
-                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.3;
+                     koeficijent=0.3;
                 }
                 else if (vrsta == Vrsta.Margareta)
                 {
-                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.4;
+                     koeficijent=0.4;
                 }
                  else if (vrsta == Vrsta.Orhideja)
                 {
-                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.5;
+                     koeficijent=0.5;
                 }
                  else if (vrsta == Vrsta.Ljiljan)
                 {
-                    svjezina-=((DateTime.Now-datumBranja).TotalDays-2)*0.6;
+                    koeficijent=0.6;
                 }
             }
+           for(int i=1; i<brojDana; i++)
+            {
+                koeficijent*=2;
+
+            }
+           svjezina-=koeficijent;
            if(svjezina<0) svjezina=0;
            return svjezina;
         }
