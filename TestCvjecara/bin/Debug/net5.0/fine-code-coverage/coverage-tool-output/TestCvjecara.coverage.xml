@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.48219999999999996" branch-rate="0.3308" version="1.9" timestamp="1637438518" lines-covered="163" lines-valid="338" branches-covered="45" branches-valid="136">
+<coverage line-rate="0.48219999999999996" branch-rate="0.3308" version="1.9" timestamp="1637439937" lines-covered="163" lines-valid="338" branches-covered="45" branches-valid="136">
   <sources>
     <source>C:\Users\DT User\</source>
   </sources>
@@ -1294,7 +1294,7 @@
             <line number="4" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTest1" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTest1.cs" line-rate="0.9534" branch-rate="1" complexity="5">
+        <class name="TestCvjecara.UnitTestCvjecara" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestCvjecara.cs" line-rate="0.9534" branch-rate="1" complexity="5">
           <methods>
             <method name="InicijalizacijaPrijeSvakogTesta" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
