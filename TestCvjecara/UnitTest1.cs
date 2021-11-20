@@ -22,9 +22,9 @@ namespace TestCvjecara
             b1 = new Buket(55.0);
             b2 = new Buket(25.0);
             b3 = new Buket(30.0);
-            b1.DodajCvijet(new Cvijet(Vrsta.Ruža, "majska", "Crvena", DateTime.Parse("11/20/2021"), 20));
-            b2.DodajCvijet(new Cvijet(Vrsta.Orhideja, "Bosanski ljiljan", "Bijela", DateTime.Parse("11/18/2021"), 3));
-            b3.DodajCvijet(new Cvijet(Vrsta.Orhideja, "orhideja", "Žuta", DateTime.Parse("11/19/2021"), 6));
+            b1.DodajCvijet(new Cvijet(Vrsta.Ruža, "majska", "Crvena", DateTime.Parse("03/11/2021"), 20));
+            b2.DodajCvijet(new Cvijet(Vrsta.Orhideja, "Bosanski ljiljan", "Bijela", DateTime.Parse("03/11/2021"), 3));
+            b3.DodajCvijet(new Cvijet(Vrsta.Orhideja, "orhideja", "Žuta", DateTime.Parse("10/11/2021"), 6));
             p = new Poklon("rođendan", 0.1);
             musterije = new List<Mušterija> { m1, m2, m3 };
         }
@@ -59,7 +59,16 @@ namespace TestCvjecara
             Assert.AreEqual(cvjećara.DajNajboljuMušteriju().IdentifikacijskiBroj, m1.IdentifikacijskiBroj);
         }
 
-
-
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestNajboljaMušterijaIzuzetakZbogJednakosti()
+        {
+            Cvjećara cvjećara = new Cvjećara();
+            m1.RegistrujKupovinu(b1, p);
+            m2.RegistrujKupovinu(b1, p);
+            m3.RegistrujKupovinu(b2, p);
+            cvjećara.Mušterije = musterije;
+            cvjećara.DajNajboljuMušteriju();
+        }
     }
 }
