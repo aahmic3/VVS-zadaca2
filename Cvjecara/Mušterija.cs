@@ -66,9 +66,7 @@ namespace Cvjecara
         }
 
         /// <summary>
-        /// Metoda koja dodjeljuje nagradni poklon mušteriji.
-        /// Ukoliko je mušterija napravila broj kupovina koji predstavlja stepen broja 10
-        /// (minimalno 100, a zatim 1,000, 10,000, 100,000 i sl.)
+        ///5
         /// dodaje mu se nagradni poklon koji je poslan kao parametar,
         /// ali samo pod uslovom da poklon ispunjava kriterij da njegov postotak popusta
         /// odgovara broju kupovina (za 100 kupovina maksimalni popust je 10%, za 1,000
