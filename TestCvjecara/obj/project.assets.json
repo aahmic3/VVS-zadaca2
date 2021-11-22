@@ -8,6 +8,15 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "CsvHelper/27.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/CsvHelper.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/CsvHelper.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.9.4": {
         "type": "package",
         "compile": {
@@ -1723,6 +1732,30 @@
         "coverlet-icon.png",
         "coverlet.collector.3.0.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "CsvHelper/27.2.0": {
+      "sha512": "TvOda5RWz/KK5MDGIuEE5WxckPCO+cEmws1ZsLas+mSFZJSpHp/v6xl2o72PXr8NcOndKhR7k0wuLYQQ/1R9fQ==",
+      "type": "package",
+      "path": "csvhelper/27.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.27.2.0.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/net5.0/CsvHelper.dll",
+        "lib/net5.0/CsvHelper.xml",
+        "lib/net6.0/CsvHelper.dll",
+        "lib/net6.0/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
       ]
     },
     "Microsoft.CodeCoverage/16.9.4": {
@@ -6122,6 +6155,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "CsvHelper >= 27.2.0",
       "Cvjecara >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
@@ -6130,19 +6164,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\azra\\.nuget\\packages\\": {}
+    "C:\\Users\\DT User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\TestCvjecara.csproj",
+      "projectUniqueName": "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\TestCvjecara.csproj",
       "projectName": "TestCvjecara",
-      "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\TestCvjecara.csproj",
-      "packagesPath": "C:\\Users\\azra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\obj\\",
+      "projectPath": "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\TestCvjecara.csproj",
+      "packagesPath": "C:\\Users\\DT User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\azra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DT User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6156,8 +6190,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj": {
-              "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj"
+            "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj": {
+              "projectPath": "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj"
             }
           }
         }
@@ -6172,6 +6206,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[27.2.0, )"
+          },
           "MSTest.TestAdapter": {
             "target": "Package",
             "version": "[2.2.3, )"
@@ -6204,7 +6242,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

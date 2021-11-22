@@ -1,12 +1,32 @@
-﻿using Cvjecara;
+﻿using CsvHelper;
+using Cvjecara;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Xml;
+
 namespace TestCvjecara
 {
     [TestClass]
     public class UnitTestsCvijet
     {
+        static IEnumerable<object[]> CvijetNeisravniCSV
+        {
+            get
+            {
+                return UčitajPodatkeCSV();
+            }
+        }
+        static IEnumerable<object[]> CvijetIspravniCSV
+        {
+            get
+            {
+                return UčitajPodatkeXML();
+            }
+        }
         Cvijet c1, c2, c3, c4, c5, c6;
 
         [TestInitialize]
@@ -20,6 +40,17 @@ namespace TestCvjecara
             c6 = new Cvijet(Vrsta.Ruža, "Majska", "Crvena", DateTime.Now.AddDays(-6), 1);
 
         }
+        #region TestKonstruktor
+        [TestMethod]
+        [DynamicData("CvijetNeisravniCSV")]
+        [ExpectedException(typeof(FormatException))]
+        public void TestKonstrukoraIzuzetak(Vrsta vrsta, string ime, string boja, DateTime datumBranja, int kol)
+        {
+            Cvijet cvijet = new Cvijet(vrsta, ime, boja, datumBranja, kol);
+        }
+         #endregion
+
+
         [TestMethod]
         public void TestNajboljaSvježinaCvijeća()
         {
@@ -83,6 +114,39 @@ namespace TestCvjecara
             Assert.IsFalse(c1.Sezonsko);
             Assert.AreEqual(c1.Kolicina, 1);
         }
+        #region Pomoćne metode
+        public static IEnumerable<object[]> UčitajPodatkeCSV()
+        {
+            using (var reader = new StreamReader("CvijetNeispravni.csv"))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                var rows = csv.GetRecords<dynamic>();
+                foreach (var row in rows)
+                {
+                    var values = ((IDictionary<String, Object>)row).Values;
+                    var elements = values.Select(elem => elem.ToString()).ToList();
+                    yield return new object[] {(Vrsta)Enum.Parse(typeof(Vrsta), elements[0], true), elements[1],
+                    elements[2],DateTime.Parse(elements[3]),Int32.Parse(elements[4])};
+                }
+            }
+        }
+        public static IEnumerable<object[]> UčitajPodatkeXML()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("CvijetIspravni.xml");
+            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
+            {
+                List<string> elements = new List<string>();
+                foreach (XmlNode innerNode in node)
+                {
+                    elements.Add(innerNode.InnerText);
+                }
+                yield return new object[] {(Vrsta)Enum.Parse(typeof(Vrsta), elements[0], true), elements[1],
+                    elements[2],DateTime.Parse(elements[3]),elements[4] };
+            }
+        }
 
+        #endregion
     }
 }
+
