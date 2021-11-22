@@ -612,3 +612,4 @@ C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\obj\Debug\net5.0\Tes
 C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\obj\Debug\net5.0\TestCvjecara.genruntimeconfig.cache
 C:\Users\DT User\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\CsvHelper.dll
 C:\Users\DT User\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\CvijetNeispravni.csv
+C:\Users\DT User\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\CvijetIspravni.xml

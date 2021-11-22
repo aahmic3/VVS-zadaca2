@@ -48,8 +48,26 @@ namespace TestCvjecara
         {
             Cvijet cvijet = new Cvijet(vrsta, ime, boja, datumBranja, kol);
         }
-         #endregion
+        [TestMethod]
+        [DynamicData("CvijetIspravniCSV")]
+        public void TestKonstrukora(Vrsta vrsta, string ime, string boja, DateTime datumBranja, int kol)
+        {
+            Cvijet cvijet = new Cvijet(vrsta, ime, boja, datumBranja, kol);
+            Assert.AreEqual(cvijet.Vrsta, vrsta);
+            StringAssert.Equals(cvijet.LatinskoIme, ime);
+            StringAssert.Equals(cvijet.Boja, boja);
+            StringAssert.Equals(cvijet.DatumBranja, datumBranja);
+            Assert.AreEqual(cvijet.Kolicina, kol);
+        }
+        #endregion
 
+
+        [TestMethod]
+        [ExpectedException(typeof(FormatException))]
+        public void TestIzuzetkaPonovnoPostavljanjeLatinskogImena()
+        {
+            c1.LatinskoIme = "Rosa";
+        }
 
         [TestMethod]
         public void TestNajboljaSvježinaCvijeća()
@@ -142,7 +160,7 @@ namespace TestCvjecara
                     elements.Add(innerNode.InnerText);
                 }
                 yield return new object[] {(Vrsta)Enum.Parse(typeof(Vrsta), elements[0], true), elements[1],
-                    elements[2],DateTime.Parse(elements[3]),elements[4] };
+                    elements[2],DateTime.Parse(elements[3]),Int32.Parse(elements[4]) };
             }
         }
 

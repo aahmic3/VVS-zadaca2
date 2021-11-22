@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Cvjetovi>
+	<Cvijet>
+		<Vrsta>Ruža</Vrsta>
+		<LatinskoIme>Rosa</LatinskoIme>
+		<Boja>Crvena</Boja>
+		<DatumBranja>01/09/2021</DatumBranja>
+		<Kolicina>5</Kolicina>
+	</Cvijet>
+	<Cvijet>
+		<Vrsta>Ljiljan</Vrsta>
+		<LatinskoIme>Lilium</LatinskoIme>
+		<Boja>Bijela</Boja>
+		<DatumBranja>10/11/2021</DatumBranja>
+		<Kolicina>10</Kolicina>
+	</Cvijet>
+	<Cvijet>
+		<Vrsta>Neven</Vrsta>
+		<LatinskoIme>Calendula officinalis</LatinskoIme>
+		<Boja>Žuta</Boja>
+		<DatumBranja>02/11/2021</DatumBranja>
+		<Kolicina>7</Kolicina>
+	</Cvijet>
+	<Cvijet>
+		<Vrsta>Margareta</Vrsta>
+		<LatinskoIme>LatinskoIme</LatinskoIme>
+		<Boja>Bijela</Boja>
+		<DatumBranja>04/03/2021</DatumBranja>
+		<Kolicina>8</Kolicina>
+	</Cvijet>
+	<Cvijet>
+		<Vrsta>Orhideja</Vrsta>
+		<LatinskoIme>Orchidaceae</LatinskoIme>
+		<Boja>Roza</Boja>
+		<DatumBranja>11/03/2021</DatumBranja>
+		<Kolicina>18</Kolicina>
+	</Cvijet>
+</Cvjetovi>
