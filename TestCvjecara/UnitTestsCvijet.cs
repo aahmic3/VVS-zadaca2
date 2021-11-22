@@ -20,7 +20,7 @@ namespace TestCvjecara
                 return UčitajPodatkeCSV();
             }
         }
-        static IEnumerable<object[]> CvijetIspravniCSV
+        static IEnumerable<object[]> CvijetIspravniXML
         {
             get
             {
@@ -49,7 +49,7 @@ namespace TestCvjecara
             Cvijet cvijet = new Cvijet(vrsta, ime, boja, datumBranja, kol);
         }
         [TestMethod]
-        [DynamicData("CvijetIspravniCSV")]
+        [DynamicData("CvijetIspravniXML")]
         public void TestKonstrukora(Vrsta vrsta, string ime, string boja, DateTime datumBranja, int kol)
         {
             Cvijet cvijet = new Cvijet(vrsta, ime, boja, datumBranja, kol);
