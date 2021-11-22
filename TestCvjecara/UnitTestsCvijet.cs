@@ -59,5 +59,30 @@ namespace TestCvjecara
             Assert.AreEqual(c3.OdrediSvježinuCvijeća(), 0.0);
         }
 
+        [TestMethod]
+        public void TestProvjeriSezonskoJesteSzonsko1()
+        {
+            c5.ProvjeriKrajSezone();
+            Assert.IsTrue(c5.Sezonsko);
+            Assert.AreEqual(c5.Kolicina, 0);
+        }
+
+        [TestMethod]
+        public void TestProvjeriSezonskoJesteSzonsko2()
+        {
+            c5.DatumBranja.AddMonths(-10);
+            c5.ProvjeriKrajSezone();
+            Assert.IsTrue(c5.Sezonsko);
+            Assert.AreEqual(c5.Kolicina, 0);
+        }
+
+        [TestMethod]
+        public void TestProvjeriSezonskoNijeSezonsko()
+        {
+            c1.ProvjeriKrajSezone();
+            Assert.IsFalse(c1.Sezonsko);
+            Assert.AreEqual(c1.Kolicina, 1);
+        }
+
     }
 }
