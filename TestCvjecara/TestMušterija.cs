@@ -78,6 +78,17 @@ namespace TestCvjecara
         }
 
         [TestMethod]
+
+        public void TestNagradnaKupovinaOstvarenaZaVelikiBroj()
+        {
+            for (int i = 0; i < 10000; i++)
+            {
+                m2.RegistrujKupovinu(b1, p1);
+            }
+            Assert.IsTrue(m2.NagradnaKupovina(p1));
+        }
+
+        [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void NedozvoljenPostotakPoklon()
         {
