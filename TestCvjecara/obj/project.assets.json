@@ -6164,19 +6164,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
+    "C:\\Users\\DT User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\TestCvjecara\\TestCvjecara.csproj",
+      "projectUniqueName": "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\TestCvjecara.csproj",
       "projectName": "TestCvjecara",
-      "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\TestCvjecara\\TestCvjecara.csproj",
-      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\TestCvjecara\\obj\\",
+      "projectPath": "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\TestCvjecara.csproj",
+      "packagesPath": "C:\\Users\\DT User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DT User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6190,8 +6190,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Cvjecara\\Cvjecara.csproj": {
-              "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Cvjecara\\Cvjecara.csproj"
+            "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj": {
+              "projectPath": "C:\\Users\\DT User\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj"
             }
           }
         }
@@ -6242,7 +6242,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

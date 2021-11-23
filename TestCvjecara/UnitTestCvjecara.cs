@@ -209,29 +209,22 @@ namespace TestCvjecara
        
         public void NaručiCvijece()
         {
-          
             Cvjećara cvjećara = new Cvjećara();
             b1.DodajDodatak("Slama");
             b2.DodajDodatak("Lišće");
             cvjećara.DodajBuket(b1.Cvijeće, b1.Dodaci, b1.Poklon, b1.Cijena);
             cvjećara.DodajBuket(b2.Cvijeće, b2.Dodaci, b2.Poklon, b2.Cijena);
-            List<Buket> buketi = cvjećara.DajSveBukete();
-            List<Buket> buketi1 = new List<Buket>() { b1, b2, b3 };
             Poklon p = new Poklon("ljljan", 0.2);
-            cvjećara.NaručiCvijeće(m1, b1, p);
-            cvjećara.NaručeniPokloni.Contains(p);
-
-
+            List<Buket> buketi = cvjećara.DajSveBukete();
+            cvjećara.NaručiCvijeće(m1,buketi[0] , p);
+            Assert.IsTrue(cvjećara.NaručeniPokloni.Contains(p));
         }
         [TestMethod]
         [ExpectedException(typeof(FormatException))]
         public void TestPokloni()
-        {
+        { 
             Cvjećara cvjećara = new Cvjećara();
-            Cvijet ruza = new Cvijet(Vrsta.Ruža, "Ruza", "Bijela", DateTime.Now.AddDays(-7), 3);
-            Mušterija m = new Mušterija("Sakib");
-
-            cvjećara.DajSveNaručenePoklone(new Mušterija("Hanifa"), 0.1);
+            cvjećara.DajSveNaručenePoklone(m1, 0.9);
         }
 
         /*   [TestMethod]
