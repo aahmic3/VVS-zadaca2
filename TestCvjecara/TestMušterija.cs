@@ -2,12 +2,31 @@
 using Cvjecara;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System.IO;
+using CsvHelper;
+using System.Globalization;
+using System.Linq;
+using System.Xml;
 
 namespace TestCvjecara
 {
     [TestClass]
-    public class TestMušterija { 
-       
+    public class TestMušterija {
+        static IEnumerable<object[]> PoklonNeispravniCSV
+        {
+            get
+            {
+                return UčitajPodatkeCSV();
+            }
+        }
+        static IEnumerable<object[]> PoklonIspravniXML
+        {
+            get
+            {
+                return UčitajPodatkeXML();
+            }
+        }
+
         Mušterija m1, m2;
         Buket b1;
         private Poklon p1, p2, p3;
@@ -21,6 +40,7 @@ namespace TestCvjecara
             p2 = new Poklon("diplomski", 0.2);
             p3 = new Poklon("godišnjica", 0.3);
         }
+        #region TestGeteriMušterija
         [TestMethod]
         public void TestGetUkupranBrojKupovina()
         {
@@ -54,6 +74,9 @@ namespace TestCvjecara
         {
             Assert.AreEqual(m2.ImeIPrezime, "Miki Maus");
         }
+        #endregion
+
+        #region TestMetodeMušterija
         [TestMethod]
         [ExpectedException(typeof(NotSupportedException))]
         public void TestNullBuketIliPoklon()
@@ -66,8 +89,8 @@ namespace TestCvjecara
             m1.NagradnaKupovina(p1);
 
         }
-        [TestMethod]
 
+        [TestMethod]
         public void TestNagradnaKupovinaOstvarena()
         {
             for(int i=0; i<100; i++)
@@ -78,7 +101,6 @@ namespace TestCvjecara
         }
 
         [TestMethod]
-
         public void TestNagradnaKupovinaOstvarenaZaVelikiBroj()
         {
             for (int i = 0; i < 10000; i++)
@@ -87,18 +109,63 @@ namespace TestCvjecara
             }
             Assert.IsTrue(m2.NagradnaKupovina(p1));
         }
+        #endregion
 
+        #region TestKonstruktorPoklon
         [TestMethod]
+        [DynamicData("PoklonNeispravniCSV")]
         [ExpectedException(typeof(InvalidOperationException))]
-        public void NedozvoljenPostotakPoklon()
+        public void TestKonstrukoraIzuzetak(String opis, double postotak)
         {
-            Poklon poklon = new Poklon("rođendan", 0.0);
-
+           Poklon poklon = new Poklon(opis,postotak);
         }
+        [TestMethod]
+        [DynamicData("PoklonIspravniXML")]
+        public void TestKonstrukora(String opis, double postotak)
+        {
+            Poklon poklon = new Poklon(opis, postotak);
+            StringAssert.Equals(poklon.Opis, opis);
+            Assert.AreEqual(poklon.PostotakPopusta, postotak);
+        }
+        #endregion
+
+        #region TestMetodaPoklon
         [TestMethod]
         public void TestGeterŠifraPoklona()
         {
             StringAssert.Equals(p1.Šifra, "10000");
         }
+        #endregion
+
+        #region PomoćneMetode
+        public static IEnumerable<object[]> UčitajPodatkeCSV()
+        {
+            using (var reader = new StreamReader("PoklonNeispravni.csv"))
+            using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+            {
+                var rows = csv.GetRecords<dynamic>();
+                foreach (var row in rows)
+                {
+                    var values = ((IDictionary<String, Object>)row).Values;
+                    var elements = values.Select(elem => elem.ToString()).ToList();
+                    yield return new object[] {elements[0], double.Parse(elements[1])};
+                }
+            }
+        }
+        public static IEnumerable<object[]> UčitajPodatkeXML()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("PoklonIspravni.xml");
+            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
+            {
+                List<string> elements = new List<string>();
+                foreach (XmlNode innerNode in node)
+                {
+                    elements.Add(innerNode.InnerText);
+                }
+                yield return new object[] {elements[0], double.Parse(elements[1]) };
+            }
+        }
+        #endregion
     }
 }

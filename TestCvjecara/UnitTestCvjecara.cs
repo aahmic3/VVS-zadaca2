@@ -29,47 +29,6 @@ namespace TestCvjecara
             musterije = new List<Mušterija> { m1, m2, m3 };
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void TestNajboljaMušterijaIzuzetakBezMušterija(){
-            Cvjećara cvjećara = new Cvjećara();
-            cvjećara.DajNajboljuMušteriju();
-        }
-
-        [TestMethod]
-        public void TestNajboljaMušterijaPoBrojuCvijeća()
-        {
-            Cvjećara cvjećara = new Cvjećara();
-            m1.RegistrujKupovinu(b1, p);
-            m1.RegistrujKupovinu(b2, p);
-            m2.RegistrujKupovinu(b2, p);
-            m3.RegistrujKupovinu(b3, p);
-            cvjećara.Mušterije = musterije;
-            Assert.AreEqual(cvjećara.DajNajboljuMušteriju().IdentifikacijskiBroj, m1.IdentifikacijskiBroj);
-        }
-        [TestMethod]
-        public void TestNajboljaMušterijaPoCijeni()
-        {
-            Cvjećara cvjećara = new Cvjećara();
-            m1.RegistrujKupovinu(b2, p);
-            m1.RegistrujKupovinu(b2, p);
-            m2.RegistrujKupovinu(b3, p);
-            m3.RegistrujKupovinu(b2, p);
-            cvjećara.Mušterije = musterije;
-            Assert.AreEqual(cvjećara.DajNajboljuMušteriju().IdentifikacijskiBroj, m1.IdentifikacijskiBroj);
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
-        public void TestNajboljaMušterijaIzuzetakZbogJednakosti()
-        {
-            Cvjećara cvjećara = new Cvjećara();
-            m1.RegistrujKupovinu(b1, p);
-            m2.RegistrujKupovinu(b1, p);
-            m3.RegistrujKupovinu(b2, p);
-            cvjećara.Mušterije = musterije;
-            cvjećara.DajNajboljuMušteriju();
-        }
 
         [TestMethod]
         public void TestDodajBuket()
@@ -225,6 +184,49 @@ namespace TestCvjecara
         { 
             Cvjećara cvjećara = new Cvjećara();
             cvjećara.DajSveNaručenePoklone(m1, 0.9);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestNajboljaMušterijaIzuzetakBezMušterija()
+        {
+            Cvjećara cvjećara = new Cvjećara();
+            cvjećara.DajNajboljuMušteriju();
+        }
+
+        [TestMethod]
+        public void TestNajboljaMušterijaPoBrojuCvijeća()
+        {
+            Cvjećara cvjećara = new Cvjećara();
+            m1.RegistrujKupovinu(b1, p);
+            m1.RegistrujKupovinu(b2, p);
+            m2.RegistrujKupovinu(b2, p);
+            m3.RegistrujKupovinu(b3, p);
+            cvjećara.Mušterije = musterije;
+            Assert.AreEqual(cvjećara.DajNajboljuMušteriju().IdentifikacijskiBroj, m1.IdentifikacijskiBroj);
+        }
+        [TestMethod]
+        public void TestNajboljaMušterijaPoCijeni()
+        {
+            Cvjećara cvjećara = new Cvjećara();
+            m1.RegistrujKupovinu(b2, p);
+            m1.RegistrujKupovinu(b2, p);
+            m2.RegistrujKupovinu(b3, p);
+            m3.RegistrujKupovinu(b2, p);
+            cvjećara.Mušterije = musterije;
+            Assert.AreEqual(cvjećara.DajNajboljuMušteriju().IdentifikacijskiBroj, m1.IdentifikacijskiBroj);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void TestNajboljaMušterijaIzuzetakZbogJednakosti()
+        {
+            Cvjećara cvjećara = new Cvjećara();
+            m1.RegistrujKupovinu(b1, p);
+            m2.RegistrujKupovinu(b1, p);
+            m3.RegistrujKupovinu(b2, p);
+            cvjećara.Mušterije = musterije;
+            cvjećara.DajNajboljuMušteriju();
         }
 
         /*   [TestMethod]

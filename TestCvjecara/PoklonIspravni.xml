@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Pokloni>
+	<Poklon>
+		<Opis>Medo</Opis>
+		<Postotak>0.2</Postotak>
+	</Poklon>
+	<Poklon>
+		<Opis>Srce</Opis>
+		<Postotak>0.4</Postotak>
+	</Poklon>
+	<Poklon>
+		<Opis>Čestitka</Opis>
+		<Postotak>0.1</Postotak>
+	</Poklon>
+	<Poklon>
+		<Opis>Balon</Opis>
+		<Postotak>0.3</Postotak>
+	</Poklon>
+</Pokloni>

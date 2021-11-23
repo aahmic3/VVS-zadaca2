@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.4047" branch-rate="0.30820000000000003" version="1.9" timestamp="1637664427" lines-covered="153" lines-valid="378" branches-covered="45" branches-valid="146">
+<coverage line-rate="0.4047" branch-rate="0.30820000000000003" version="1.9" timestamp="1637705089" lines-covered="153" lines-valid="378" branches-covered="45" branches-valid="146">
   <sources>
-    <source>C:\Users\LENOVO\</source>
+    <source>C:\Users\azra\</source>
   </sources>
   <packages>
     <package name="Cvjecara" line-rate="0.33549999999999996" branch-rate="0.2681" complexity="167">
       <classes>
-        <class name="Cvjecara.Buket" filename="Source\Repos\VVS-zadaca21\Cvjecara\Buket.cs" line-rate="0.862" branch-rate="0.6666" complexity="18">
+        <class name="Cvjecara.Buket" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Buket.cs" line-rate="0.862" branch-rate="0.6666" complexity="18">
           <methods>
             <method name="get_Cvijeće" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -142,7 +142,7 @@
             <line number="48" hits="4" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Cvijet" filename="Source\Repos\VVS-zadaca21\Cvjecara\Cvijet.cs" line-rate="0.4193" branch-rate="0.38880000000000003" complexity="61">
+        <class name="Cvjecara.Cvijet" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Cvijet.cs" line-rate="0.4193" branch-rate="0.38880000000000003" complexity="61">
           <methods>
             <method name="get_Vrsta" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -548,7 +548,7 @@
             <line number="96" hits="6" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Cvjećara" filename="Source\Repos\VVS-zadaca21\Cvjecara\Cvjećara.cs" line-rate="0.2892" branch-rate="0.1481" complexity="61">
+        <class name="Cvjecara.Cvjećara" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Cvjećara.cs" line-rate="0.2892" branch-rate="0.1481" complexity="61">
           <methods>
             <method name="get_Cvijeće" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -746,7 +746,7 @@
                 <line number="144" hits="0" branch="False" />
                 <line number="145" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="44" type="jump" coverage="0%" />
+                    <condition number="49" type="jump" coverage="0%" />
                   </conditions>
                 </line>
                 <line number="146" hits="0" branch="False" />
@@ -978,7 +978,7 @@
             <line number="144" hits="0" branch="False" />
             <line number="145" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="44" type="jump" coverage="0%" />
+                <condition number="49" type="jump" coverage="0%" />
               </conditions>
             </line>
             <line number="146" hits="0" branch="False" />
@@ -1050,7 +1050,7 @@
             <line number="37" hits="5" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Leksikon" filename="Source\Repos\VVS-zadaca21\Cvjecara\Leksikon.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="Cvjecara.Leksikon" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Leksikon.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="ValidnoLatinskoIme" signature="(System.String)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1064,7 +1064,7 @@
             <line number="18" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Mušterija" filename="Source\Repos\VVS-zadaca21\Cvjecara\Mušterija.cs" line-rate="0" branch-rate="0" complexity="21">
+        <class name="Cvjecara.Mušterija" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Mušterija.cs" line-rate="0" branch-rate="0" complexity="21">
           <methods>
             <method name="get_IdentifikacijskiBroj" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1244,7 +1244,7 @@
             <line number="52" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Poklon" filename="Source\Repos\VVS-zadaca21\Cvjecara\Poklon.cs" line-rate="0" branch-rate="0" complexity="5">
+        <class name="Cvjecara.Poklon" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Poklon.cs" line-rate="0" branch-rate="0" complexity="5">
           <methods>
             <method name="get_Šifra" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1316,7 +1316,7 @@
             <line number="4" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Zadatak_2.TDD" filename="Source\Repos\VVS-zadaca21\Zadatak 2\TDD.cs" line-rate="0.6842" branch-rate="1" complexity="9">
+        <class name="Zadatak_2.TDD" filename="source\repos\aahmic3\VVS-zadaca2\Zadatak 2\TDD.cs" line-rate="0.6842" branch-rate="1" complexity="9">
           <methods>
             <method name="TestZamjenskiObjekat" signature="()" line-rate="0.6666" branch-rate="1" complexity="1">
               <lines>

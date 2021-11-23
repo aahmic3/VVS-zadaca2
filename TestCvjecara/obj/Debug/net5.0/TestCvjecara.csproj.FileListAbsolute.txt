@@ -718,3 +718,10 @@ C:\Users\LENOVO\Source\Repos\VVS-zadaca21\TestCvjecara\obj\Debug\net5.0\TestCvje
 C:\Users\LENOVO\Source\Repos\VVS-zadaca21\TestCvjecara\obj\Debug\net5.0\ref\TestCvjecara.dll
 C:\Users\LENOVO\Source\Repos\VVS-zadaca21\TestCvjecara\obj\Debug\net5.0\TestCvjecara.pdb
 C:\Users\LENOVO\Source\Repos\VVS-zadaca21\TestCvjecara\obj\Debug\net5.0\TestCvjecara.genruntimeconfig.cache
+C:\Users\azra\source\repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\CvijetIspravni.xml
+C:\Users\azra\source\repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\CvijetNeispravni.csv
+C:\Users\azra\source\repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\CsvHelper.dll
+C:\Users\azra\source\repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\PoklonNeispravni.csv
+C:\Users\azra\source\repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\PoklonIspravni.xml
+C:\Users\azra\source\repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\BuketIspravni.xml
+C:\Users\azra\source\repos\aahmic3\VVS-zadaca2\TestCvjecara\bin\Debug\net5.0\BuketNeispravni.csv

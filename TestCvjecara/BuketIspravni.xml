@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buketi>
+	<Buket>
+		<Cijena>10.0</Cijena>
+	</Buket>
+	<Buket>
+		<Cijena>15.0</Cijena>
+	</Buket>
+	<Buket>
+		<Cijena>30.0</Cijena>
+	</Buket>
+	<Buket>
+		<Cijena>55.0</Cijena>
+	</Buket>
+</Buketi>
