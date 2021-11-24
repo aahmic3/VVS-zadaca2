@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.9451" branch-rate="0.9578" version="1.9" timestamp="1637705085" lines-covered="655" lines-valid="693" branches-covered="159" branches-valid="166">
+<coverage line-rate="0.9451" branch-rate="0.9578" version="1.9" timestamp="1637760153" lines-covered="655" lines-valid="693" branches-covered="159" branches-valid="166">
   <sources>
-    <source>C:\Users\azra\</source>
+    <source>C:\Users\DT User\</source>
   </sources>
   <packages>
     <package name="Cvjecara" line-rate="0.9468000000000001" branch-rate="0.9492" complexity="167">
       <classes>
-        <class name="Cvjecara.Buket" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Buket.cs" line-rate="1" branch-rate="1" complexity="18">
+        <class name="Cvjecara.Buket" filename="Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Buket.cs" line-rate="1" branch-rate="1" complexity="18">
           <methods>
             <method name="get_Cvijeće" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -142,7 +142,7 @@
             <line number="48" hits="90" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Cvijet" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Cvijet.cs" line-rate="1" branch-rate="0.9814" complexity="61">
+        <class name="Cvjecara.Cvijet" filename="Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Cvijet.cs" line-rate="1" branch-rate="0.9814" complexity="61">
           <methods>
             <method name="get_Vrsta" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -548,7 +548,7 @@
             <line number="96" hits="260" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Cvjećara" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Cvjećara.cs" line-rate="0.8842" branch-rate="0.8887999999999999" complexity="61">
+        <class name="Cvjecara.Cvjećara" filename="Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Cvjećara.cs" line-rate="0.8842" branch-rate="0.8887999999999999" complexity="61">
           <methods>
             <method name="get_Cvijeće" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1050,7 +1050,7 @@
             <line number="37" hits="19" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Leksikon" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Leksikon.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Cvjecara.Leksikon" filename="Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Leksikon.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="ValidnoLatinskoIme" signature="(System.String)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -1064,7 +1064,7 @@
             <line number="18" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Mušterija" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Mušterija.cs" line-rate="1" branch-rate="1" complexity="21">
+        <class name="Cvjecara.Mušterija" filename="Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Mušterija.cs" line-rate="1" branch-rate="1" complexity="21">
           <methods>
             <method name="get_IdentifikacijskiBroj" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1244,7 +1244,7 @@
             <line number="52" hits="96" branch="False" />
           </lines>
         </class>
-        <class name="Cvjecara.Poklon" filename="source\repos\aahmic3\VVS-zadaca2\Cvjecara\Poklon.cs" line-rate="1" branch-rate="1" complexity="5">
+        <class name="Cvjecara.Poklon" filename="Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Poklon.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Šifra" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1316,7 +1316,7 @@
             <line number="4" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.TestMušterija" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="0.9242" branch-rate="1" complexity="17">
+        <class name="TestCvjecara.TestMušterija" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="0.9242" branch-rate="1" complexity="17">
           <methods>
             <method name="get_PoklonNeispravniCSV" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1530,7 +1530,7 @@
             <line number="137" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.TestMušterija/&lt;&gt;c" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="TestCvjecara.TestMušterija/&lt;&gt;c" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;UčitajPodatkeCSV&gt;b__23_0" signature="(System.Object)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1542,7 +1542,7 @@
             <line number="150" hits="18" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.TestMušterija/&lt;UčitajPodatkeCSV&gt;d__23" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="TestCvjecara.TestMušterija/&lt;UčitajPodatkeCSV&gt;d__23" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
               <lines>
@@ -1592,7 +1592,7 @@
             <line number="154" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.TestMušterija/&lt;UčitajPodatkeXML&gt;d__24" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="TestCvjecara.TestMušterija/&lt;UčitajPodatkeXML&gt;d__24" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
               <lines>
@@ -1644,7 +1644,7 @@
             <line number="168" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestCvjecara" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestCvjecara.cs" line-rate="0.9194" branch-rate="1" complexity="20">
+        <class name="TestCvjecara.UnitTestCvjecara" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestCvjecara.cs" line-rate="0.9194" branch-rate="1" complexity="20">
           <methods>
             <method name="InicijalizacijaPrijeSvakogTesta" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2028,7 +2028,7 @@
             <line number="230" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsBuket" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="0.9333" branch-rate="1" complexity="7">
+        <class name="TestCvjecara.UnitTestsBuket" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="0.9333" branch-rate="1" complexity="7">
           <methods>
             <method name="get_BuketNeispravniCSV" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2122,7 +2122,7 @@
             <line number="71" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsBuket/&lt;&gt;c" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="TestCvjecara.UnitTestsBuket/&lt;&gt;c" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;UčitajPodatkeCSV&gt;b__9_0" signature="(System.Object)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2134,7 +2134,7 @@
             <line number="84" hits="10" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsBuket/&lt;UčitajPodatkeCSV&gt;d__9" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="TestCvjecara.UnitTestsBuket/&lt;UčitajPodatkeCSV&gt;d__9" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
               <lines>
@@ -2184,7 +2184,7 @@
             <line number="88" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsBuket/&lt;UčitajPodatkeXML&gt;d__10" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="TestCvjecara.UnitTestsBuket/&lt;UčitajPodatkeXML&gt;d__10" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
               <lines>
@@ -2236,7 +2236,7 @@
             <line number="103" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsCvijet" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="0.9695999999999999" branch-rate="1" complexity="16">
+        <class name="TestCvjecara.UnitTestsCvijet" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="0.9695999999999999" branch-rate="1" complexity="16">
           <methods>
             <method name="get_CvijetNeisravniCSV" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2438,7 +2438,7 @@
             <line number="134" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsCvijet/&lt;&gt;c" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="1" branch-rate="1" complexity="1">
+        <class name="TestCvjecara.UnitTestsCvijet/&lt;&gt;c" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
             <method name="&lt;UčitajPodatkeCSV&gt;b__24_0" signature="(System.Object)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2450,7 +2450,7 @@
             <line number="145" hits="96" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsCvijet/&lt;UčitajPodatkeCSV&gt;d__24" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="TestCvjecara.UnitTestsCvijet/&lt;UčitajPodatkeCSV&gt;d__24" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
               <lines>
@@ -2502,7 +2502,7 @@
             <line number="150" hits="1" branch="False" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsCvijet/&lt;UčitajPodatkeXML&gt;d__25" filename="source\repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="1" branch-rate="1" complexity="4">
+        <class name="TestCvjecara.UnitTestsCvijet/&lt;UčitajPodatkeXML&gt;d__25" filename="Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="1" branch-rate="1" complexity="4">
           <methods>
             <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="4">
               <lines>

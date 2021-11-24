@@ -18,10 +18,8 @@ namespace Zadatak_2
             Cvjećara c = new Cvjećara();
             c.RadSaCvijećem(c1, 0);
             c.RadSaCvijećem(c2, 0);
-            
-            Leksikon leksikon = new Leksikon();
-            c.ProvjeriLatinskaImenaCvijeća(leksikon);
-
+            Spy spy = new Spy();
+            c.ProvjeriLatinskaImenaCvijeća(spy);
             Assert.AreEqual(c.Cvijeće.Count, 1);
             Assert.IsTrue(c.Cvijeće.Contains(c1));
             Assert.IsFalse(c.Cvijeće.Contains(c2));

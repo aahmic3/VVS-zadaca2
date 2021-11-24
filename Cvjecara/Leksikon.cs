@@ -18,4 +18,14 @@ namespace Cvjecara
             throw new NotImplementedException();
         }
     }
-}
+        public class Spy : ILeksikon
+        {
+            public bool ValidnoLatinskoIme(string ime)
+            {
+                List<String> latinskaImena = new List<string> { "Rosa rubiginosa", "Lilum", "Calendula officinalis", "Orchidaceae", "Chrysanthemum" };
+                if (latinskaImena.Contains(ime))
+                    return true;
+                return false;
+            }
+        }
+    }
