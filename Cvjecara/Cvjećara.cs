@@ -101,7 +101,11 @@ namespace Cvjecara
 
         public void IzvršiNabavku(string godišnjeDoba, string veličinaNarudžbe)
         {
-            throw new NotImplementedException();
+            if (veličinaNarudžbe == "Srednja")
+                throw new ArgumentException("Nedozvoljena veličina nabavke");
+            if(godišnjeDoba == "Ljeto" || godišnjeDoba == "Zima")
+                throw new ArgumentException("Nedozvoljeno godišnje doba za nabavku.");
+
         }
 
         public void PregledajCvijeće()
