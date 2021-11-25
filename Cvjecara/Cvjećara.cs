@@ -105,7 +105,33 @@ namespace Cvjecara
                 throw new ArgumentException("Nedozvoljena veličina nabavke");
             if(godišnjeDoba == "Ljeto" || godišnjeDoba == "Zima")
                 throw new ArgumentException("Nedozvoljeno godišnje doba za nabavku.");
-
+            if (veličinaNarudžbe == "Velika")
+            {
+                Cvijet ruza = new Cvijet(Vrsta.Ruža, "Divlja", "Crvena", DateTime.Now.AddDays(-1), 100);
+                Cvijet orhideja = new Cvijet(Vrsta.Orhideja, "Orhideja", "Crvena", DateTime.Now.AddDays(-1), 100);
+                Cvijet margaret = new Cvijet(Vrsta.Margareta, "Margaret", "Bijela", DateTime.Now.AddDays(-1), 100);
+                Cvijet neven = new Cvijet(Vrsta.Neven, "Neven", "Žuta", DateTime.Now.AddDays(-1), 100);
+                RadSaCvijećem(ruza, 0);
+                Cvijet cvijet = new Cvijet(Vrsta.Ljiljan, "Lilium bosniacum", "Žuta", DateTime.Now.AddDays(-1), 10);
+                RadSaCvijećem(cvijet, 2);
+                RadSaCvijećem(orhideja, 0);
+                RadSaCvijećem(margaret, 0);
+                RadSaCvijećem(neven, 0);
+                ObrišiBuket(DajSveBukete().Find(b => b.Cijena == 20.0));
+            }
+            if (veličinaNarudžbe == "Mala")
+            {
+                
+                Cvijet orhideja = new Cvijet(Vrsta.Orhideja, "Orhideja", "Crvena", DateTime.Now.AddDays(-1), 10);
+                Cvijet ljiljan = new Cvijet(Vrsta.Ljiljan, "Bosanski ljiljan", "Bijela", DateTime.Now.AddDays(-1), 10);
+                Cvijet margaret = new Cvijet(Vrsta.Margareta, "Margaret", "Bijela", DateTime.Now.AddDays(-1), 10);
+                Cvijet neven = new Cvijet(Vrsta.Neven, "Neven", "Žuta", DateTime.Now.AddDays(-1), 10);
+            
+                RadSaCvijećem(orhideja, 0);
+                RadSaCvijećem(ljiljan, 0);
+                RadSaCvijećem(margaret, 0);
+                RadSaCvijećem(neven, 0);
+            }
         }
 
         public void PregledajCvijeće()
