@@ -61,6 +61,7 @@ namespace TestCvjecara
         }
         #endregion
 
+        #region TestMetode
 
         [TestMethod]
         [ExpectedException(typeof(FormatException))]
@@ -132,6 +133,8 @@ namespace TestCvjecara
             Assert.IsFalse(c1.Sezonsko);
             Assert.AreEqual(c1.Kolicina, 1);
         }
+        #endregion
+
         #region Pomoćne metode
         public static IEnumerable<object[]> UčitajPodatkeCSV()
         {

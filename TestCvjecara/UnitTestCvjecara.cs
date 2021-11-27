@@ -29,43 +29,7 @@ namespace TestCvjecara
             musterije = new List<Mušterija> { m1, m2, m3 };
         }
 
-
-        [TestMethod]
-        public void TestDodajBuket()
-        {
-            Cvjećara cvjećara = new Cvjećara();
-            b1.DodajDodatak("Slama");
-            b2.DodajDodatak("Lišće");
-            cvjećara.DodajBuket(b1.Cvijeće, b1.Dodaci, b1.Poklon, b1.Cijena);
-            cvjećara.DodajBuket(b2.Cvijeće, b2.Dodaci, b2.Poklon, b2.Cijena);
-            List<Buket> buketi = cvjećara.DajSveBukete();
-            List<Buket> buketi1=new List<Buket>() { b1, b2, b3};
-            Assert.AreEqual(buketi.Count, 2);
-
-        }
-        [TestMethod]
-        public void TestBrisanjaBuketa()
-        {
-            Cvjećara cvjećara = new Cvjećara();
-            cvjećara.DodajBuket(b1.Cvijeće, b1.Dodaci, b1.Poklon, b1.Cijena);
-            cvjećara.DodajBuket(b2.Cvijeće, b2.Dodaci, b2.Poklon, b2.Cijena);
-            cvjećara.ObrišiBuket(cvjećara.DajSveBukete()[0]);
-            List<Buket> buketi = cvjećara.DajSveBukete();
-            Assert.AreEqual(buketi.Count, 1);
-            CollectionAssert.AreEqual(buketi, cvjećara.DajSveBukete()); 
-
-        }
-        
-        [TestMethod]
-        public void TestPregledajCvijeće()
-        {
-            Cvjećara cvjećara = new Cvjećara();
-            Cvijet c1 = new Cvijet(Vrsta.Orhideja, "Bosanski ljiljan", "Bijela", DateTime.Now.AddDays(-7), 3);
-            cvjećara.RadSaCvijećem(c1, 0);
-            cvjećara.PregledajCvijeće();
-            CollectionAssert.DoesNotContain(cvjećara.Cvijeće, c1);
-        }
-
+        #region TestMetodeRadSaCvijećem
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestRadSaCvijećemNepoznataOpcija()
@@ -152,6 +116,44 @@ namespace TestCvjecara
             cvjećara.RadSaCvijećem(c1, 2);
             CollectionAssert.DoesNotContain(cvjećara.Cvijeće, c1);
         }
+        #endregion
+
+        #region TestOstalihMetoda
+        [TestMethod]
+        public void TestDodajBuket()
+        {
+            Cvjećara cvjećara = new Cvjećara();
+            b1.DodajDodatak("Slama");
+            b2.DodajDodatak("Lišće");
+            cvjećara.DodajBuket(b1.Cvijeće, b1.Dodaci, b1.Poklon, b1.Cijena);
+            cvjećara.DodajBuket(b2.Cvijeće, b2.Dodaci, b2.Poklon, b2.Cijena);
+            List<Buket> buketi = cvjećara.DajSveBukete();
+            List<Buket> buketi1 = new List<Buket>() { b1, b2, b3 };
+            Assert.AreEqual(buketi.Count, 2);
+        }
+
+        [TestMethod]
+        public void TestBrisanjaBuketa()
+        {
+            Cvjećara cvjećara = new Cvjećara();
+            cvjećara.DodajBuket(b1.Cvijeće, b1.Dodaci, b1.Poklon, b1.Cijena);
+            cvjećara.DodajBuket(b2.Cvijeće, b2.Dodaci, b2.Poklon, b2.Cijena);
+            cvjećara.ObrišiBuket(cvjećara.DajSveBukete()[0]);
+            List<Buket> buketi = cvjećara.DajSveBukete();
+            Assert.AreEqual(buketi.Count, 1);
+            CollectionAssert.AreEqual(buketi, cvjećara.DajSveBukete());
+        }
+
+        [TestMethod]
+        public void TestPregledajCvijeće()
+        {
+            Cvjećara cvjećara = new Cvjećara();
+            Cvijet c1 = new Cvijet(Vrsta.Orhideja, "Bosanski ljiljan", "Bijela", DateTime.Now.AddDays(-7), 3);
+            cvjećara.RadSaCvijećem(c1, 0);
+            cvjećara.PregledajCvijeće();
+            CollectionAssert.DoesNotContain(cvjećara.Cvijeće, c1);
+        }
+
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void NaručiCvijeceNepostojeciBuket()
@@ -164,8 +166,8 @@ namespace TestCvjecara
             Poklon p = new Poklon("Čokolada", 0.2);
             cvjećara.NaručiCvijeće(m, b, p);
         }
+
         [TestMethod]
-       
         public void NaručiCvijece()
         {
             Cvjećara cvjećara = new Cvjećara();
@@ -178,6 +180,7 @@ namespace TestCvjecara
             cvjećara.NaručiCvijeće(m1,buketi[0] , p);
             Assert.IsTrue(cvjećara.NaručeniPokloni.Contains(p));
         }
+
         [TestMethod]
         [ExpectedException(typeof(FormatException))]
         public void TestPokloni()
@@ -205,6 +208,7 @@ namespace TestCvjecara
             cvjećara.Mušterije = musterije;
             Assert.AreEqual(cvjećara.DajNajboljuMušteriju().IdentifikacijskiBroj, m1.IdentifikacijskiBroj);
         }
+
         [TestMethod]
         public void TestNajboljaMušterijaPoCijeni()
         {
@@ -228,17 +232,7 @@ namespace TestCvjecara
             cvjećara.Mušterije = musterije;
             cvjećara.DajNajboljuMušteriju();
         }
-
-        /*   [TestMethod]
-           [ExpectedException(typeof(NullReferenceException))]
-           public void TestRadSaCvijecembrisanjeNepostojecegObjekta()
-           {
-               Cvjećara cvjećara = new Cvjećara();
-               Cvijet ruza = new Cvijet(Vrsta.Orhideja, "orhideja", "bijela", DateTime.Now.AddDays(-7), 3);
-               Cvijet ruza2 = new Cvijet(Vrsta.Orhideja, "nijeOrhideja", "bijela", DateTime.Now.AddDays(-7), 3);
-               cvjećara.RadSaCvijećem(ruza, 0);
-               cvjećara.RadSaCvijećem(ruza2, 1);
-
-           }*/
+      #endregion
     }
+
 }

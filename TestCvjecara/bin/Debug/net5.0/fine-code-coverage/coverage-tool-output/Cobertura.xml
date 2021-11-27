@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage line-rate="0.9627329192546584" branch-rate="0.9838709677419355" lines-covered="775" lines-valid="805" branches-covered="183" branches-valid="186" complexity="273" version="0" timestamp="1637878452">
+<coverage line-rate="0.9627329192546584" branch-rate="0.9838709677419355" lines-covered="775" lines-valid="805" branches-covered="183" branches-valid="186" complexity="273" version="0" timestamp="1638013691">
   <sources>
-    <source>C:\Users\LENOVO\</source>
+    <source>C:\Users\azra\</source>
   </sources>
   <packages>
     <package name="Cvjecara" line-rate="0.9851190476190477" branch-rate="0.98" complexity="178">
       <classes>
-        <class name="Cvjecara.Buket" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\Cvjecara\Buket.cs" line-rate="1" branch-rate="1" complexity="18">
+        <class name="Cvjecara.Buket" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Buket.cs" line-rate="1" branch-rate="1" complexity="18">
           <methods>
             <method name="get_Cvijeće" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -107,7 +107,7 @@
             <line number="69" hits="11" branch="false" />
           </lines>
         </class>
-        <class name="Cvjecara.Cvijet" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\Cvjecara\Cvijet.cs" line-rate="1" branch-rate="0.9814814814814815" complexity="61">
+        <class name="Cvjecara.Cvijet" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Cvijet.cs" line-rate="1" branch-rate="0.9814814814814815" complexity="61">
           <methods>
             <method name="get_Vrsta" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -351,7 +351,7 @@
             <line number="166" hits="8" branch="false" />
           </lines>
         </class>
-        <class name="Cvjecara.Cvjećara" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\Cvjecara\Cvjećara.cs" line-rate="0.98" branch-rate="0.96875" complexity="70">
+        <class name="Cvjecara.Cvjećara" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Cvjećara.cs" line-rate="0.98" branch-rate="0.96875" complexity="70">
           <methods>
             <method name="get_Cvijeće" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -713,7 +713,7 @@
             <line number="224" hits="2" branch="false" />
           </lines>
         </class>
-        <class name="Cvjecara.Leksikon" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\Cvjecara\Leksikon.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Cvjecara.Leksikon" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Leksikon.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="ValidnoLatinskoIme" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -727,7 +727,7 @@
             <line number="18" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="Cvjecara.Mušterija" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\Cvjecara\Mušterija.cs" line-rate="1" branch-rate="1" complexity="21">
+        <class name="Cvjecara.Mušterija" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Mušterija.cs" line-rate="1" branch-rate="1" complexity="21">
           <methods>
             <method name="get_IdentifikacijskiBroj" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -855,7 +855,7 @@
             <line number="97" hits="2" branch="false" />
           </lines>
         </class>
-        <class name="Cvjecara.Poklon" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\Cvjecara\Poklon.cs" line-rate="1" branch-rate="1" complexity="5">
+        <class name="Cvjecara.Poklon" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Poklon.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Šifra" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -906,7 +906,7 @@
             <line number="37" hits="83" branch="false" />
           </lines>
         </class>
-        <class name="Cvjecara.Spy" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\Cvjecara\Leksikon.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Cvjecara.Spy" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\Cvjecara\Leksikon.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
             <method name="ValidnoLatinskoIme" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
               <lines>
@@ -932,7 +932,7 @@
     </package>
     <package name="TestCvjecara" line-rate="0.9438775510204082" branch-rate="1" complexity="85">
       <classes>
-        <class name="AutoGeneratedProgram" filename="C:\Users\LENOVO\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="AutoGeneratedProgram" filename="C:\Users\azra\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -944,7 +944,7 @@
             <line number="4" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="TestCvjecara.TestMušterija" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="0.9456521739130435" branch-rate="1" complexity="25">
+        <class name="TestCvjecara.TestMušterija" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\TestMušterija.cs" line-rate="0.9456521739130435" branch-rate="1" complexity="25">
           <methods>
             <method name="get_PoklonNeispravniCSV" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1202,7 +1202,7 @@
             <line number="168" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestCvjecara" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\TestCvjecara\UnitTestCvjecara.cs" line-rate="0.9194630872483222" branch-rate="1" complexity="20">
+        <class name="TestCvjecara.UnitTestCvjecara" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestCvjecara.cs" line-rate="0.9194630872483222" branch-rate="1" complexity="20">
           <methods>
             <method name="InicijalizacijaPrijeSvakogTesta" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1586,7 +1586,7 @@
             <line number="230" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsBuket" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="0.9642857142857143" branch-rate="1" complexity="15">
+        <class name="TestCvjecara.UnitTestsBuket" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsBuket.cs" line-rate="0.9642857142857143" branch-rate="1" complexity="15">
           <methods>
             <method name="get_BuketNeispravniCSV" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -1740,7 +1740,7 @@
             <line number="103" hits="1" branch="false" />
           </lines>
         </class>
-        <class name="TestCvjecara.UnitTestsCvijet" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="0.9787234042553191" branch-rate="1" complexity="24">
+        <class name="TestCvjecara.UnitTestsCvijet" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\TestCvjecara\UnitTestsCvijet.cs" line-rate="0.9787234042553191" branch-rate="1" complexity="24">
           <methods>
             <method name="get_CvijetNeisravniCSV" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
@@ -2010,7 +2010,7 @@
     </package>
     <package name="Zadatak 2" line-rate="0.961038961038961" branch-rate="1" complexity="10">
       <classes>
-        <class name="AutoGeneratedProgram" filename="C:\Users\LENOVO\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="AutoGeneratedProgram" filename="C:\Users\azra\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
           <methods>
             <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
@@ -2022,7 +2022,7 @@
             <line number="4" hits="0" branch="false" />
           </lines>
         </class>
-        <class name="Zadatak_2.TDD" filename="C:\Users\LENOVO\Source\Repos\VVS-zadaca2\Zadatak 2\TDD.cs" line-rate="0.9736842105263158" branch-rate="1" complexity="9">
+        <class name="Zadatak_2.TDD" filename="C:\Users\azra\Source\Repos\aahmic3\VVS-zadaca2\Zadatak 2\TDD.cs" line-rate="0.9736842105263158" branch-rate="1" complexity="9">
           <methods>
             <method name="TestZamjenskiObjekat" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
