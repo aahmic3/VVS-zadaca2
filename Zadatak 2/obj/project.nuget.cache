@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z4SG5lm7a+yxc/wzzssPCZdhwatuHUEMT4+bqe3sMBZ4W/NqgmYgUBZHEn+Z+r8aIPUHC80B9/bxWPxxAnXI6g==",
+  "dgSpecHash": "nND1IjCtDDbsAjfu48LtFd1FiQhgU00r7Owt5Iggsc3A8kr/QVS5N16ln6e7PypoU9BBoPOhScsxfnOnZUtZ4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Zadatak 2\\Zadatak 2.csproj",
+  "projectFilePath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\Zadatak 2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\azra\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\azra\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",

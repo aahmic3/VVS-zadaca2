@@ -98,7 +98,7 @@ namespace Cvjecara
         {
             return buketi;
         }
-
+        //uradile Azra Ahmić(18390) i Nedina Muratović(18530)
         public void IzvršiNabavku(string godišnjeDoba, string veličinaNarudžbe)
         {
             if (veličinaNarudžbe == "Srednja")

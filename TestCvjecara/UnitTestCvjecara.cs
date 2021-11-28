@@ -13,6 +13,7 @@ namespace TestCvjecara
         Buket b1, b2, b3;
         Poklon p;
         List<Mušterija> musterije;
+        //uradila Azra Ahmić(18390)
         [TestInitialize]
         public void InicijalizacijaPrijeSvakogTesta()
         {
@@ -30,6 +31,7 @@ namespace TestCvjecara
         }
 
         #region TestMetodeRadSaCvijećem
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestRadSaCvijećemNepoznataOpcija()
@@ -119,6 +121,7 @@ namespace TestCvjecara
         #endregion
 
         #region TestOstalihMetoda
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestDodajBuket()
         {
@@ -131,7 +134,7 @@ namespace TestCvjecara
             List<Buket> buketi1 = new List<Buket>() { b1, b2, b3 };
             Assert.AreEqual(buketi.Count, 2);
         }
-
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestBrisanjaBuketa()
         {
@@ -143,7 +146,7 @@ namespace TestCvjecara
             Assert.AreEqual(buketi.Count, 1);
             CollectionAssert.AreEqual(buketi, cvjećara.DajSveBukete());
         }
-
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestPregledajCvijeće()
         {
@@ -188,7 +191,7 @@ namespace TestCvjecara
             Cvjećara cvjećara = new Cvjećara();
             cvjećara.DajSveNaručenePoklone(m1, 0.9);
         }
-
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestNajboljaMušterijaIzuzetakBezMušterija()
@@ -196,7 +199,7 @@ namespace TestCvjecara
             Cvjećara cvjećara = new Cvjećara();
             cvjećara.DajNajboljuMušteriju();
         }
-
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestNajboljaMušterijaPoBrojuCvijeća()
         {
@@ -208,7 +211,7 @@ namespace TestCvjecara
             cvjećara.Mušterije = musterije;
             Assert.AreEqual(cvjećara.DajNajboljuMušteriju().IdentifikacijskiBroj, m1.IdentifikacijskiBroj);
         }
-
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestNajboljaMušterijaPoCijeni()
         {

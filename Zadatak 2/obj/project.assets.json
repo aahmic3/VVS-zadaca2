@@ -6135,11 +6135,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Zadatak 2\\Zadatak 2.csproj",
+      "projectUniqueName": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\Zadatak 2.csproj",
       "projectName": "Zadatak 2",
-      "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Zadatak 2\\Zadatak 2.csproj",
+      "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\Zadatak 2.csproj",
       "packagesPath": "C:\\Users\\azra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Zadatak 2\\obj\\",
+      "outputPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\azra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6156,8 +6156,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj": {
-              "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj"
+            "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj": {
+              "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wo2RntQtCRDHHUJWWsFfQ8+BvRc+zPCOpdwiuqlx8x8As9txoyvl5bgymvfXj+g/ejKKEe95rcwlb89v5CVxqQ==",
+  "dgSpecHash": "/2VIr1VG3IDPBuSeLRzNfhir9YztLgfyzXCD+D3IpLWUHwSn/e6wroeC3TX4XaffydhsTYnEH69PxB9A0icrwA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\TestCvjecara\\TestCvjecara.csproj",
+  "projectFilePath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\TestCvjecara\\TestCvjecara.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\azra\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\azra\\.nuget\\packages\\csvhelper\\27.2.0\\csvhelper.27.2.0.nupkg.sha512",

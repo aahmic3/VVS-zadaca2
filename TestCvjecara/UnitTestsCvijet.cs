@@ -108,7 +108,7 @@ namespace TestCvjecara
             c3.DatumBranja = DateTime.Now.AddDays(-7);
             Assert.AreEqual(c3.OdrediSvježinuCvijeća(), 0.0);
         }
-
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestProvjeriSezonskoJesteSzonsko1()
         {
@@ -116,7 +116,7 @@ namespace TestCvjecara
             Assert.IsTrue(c5.Sezonsko);
             Assert.AreEqual(c5.Kolicina, 0);
         }
-
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestProvjeriSezonskoJesteSzonsko2()
         {
@@ -125,7 +125,7 @@ namespace TestCvjecara
             Assert.IsTrue(c5.Sezonsko);
             Assert.AreEqual(c5.Kolicina, 0);
         }
-
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestProvjeriSezonskoNijeSezonsko()
         {

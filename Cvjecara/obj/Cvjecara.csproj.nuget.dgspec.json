@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj": {}
+    "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj": {}
   },
   "projects": {
-    "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj": {
+    "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj",
+        "projectUniqueName": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj",
         "projectName": "Cvjecara",
-        "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\Cvjecara.csproj",
+        "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj",
         "packagesPath": "C:\\Users\\azra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\azra\\Source\\Repos\\aahmic3\\VVS-zadaca2\\Cvjecara\\obj\\",
+        "outputPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\azra\\AppData\\Roaming\\NuGet\\NuGet.Config",

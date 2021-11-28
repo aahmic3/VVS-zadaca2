@@ -27,7 +27,9 @@ namespace TestCvjecara
                 return UčitajPodatkeXML();
             }
         }
+
         #region TestKonstruktorBuket
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         [DynamicData("BuketNeispravniCSV")]
         [ExpectedException(typeof(NotSupportedException))]
@@ -35,6 +37,7 @@ namespace TestCvjecara
         {
             Buket buket = new Buket(cijena);
         }
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         [DynamicData("BuketIspravniXML")]
         public void TestKonstrukora(double cijena)

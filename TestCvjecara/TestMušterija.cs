@@ -112,6 +112,7 @@ namespace TestCvjecara
         #endregion
 
         #region TestKonstruktorPoklon
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         [DynamicData("PoklonNeispravniCSV")]
         [ExpectedException(typeof(InvalidOperationException))]
@@ -119,6 +120,7 @@ namespace TestCvjecara
         {
            Poklon poklon = new Poklon(opis,postotak);
         }
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         [DynamicData("PoklonIspravniXML")]
         public void TestKonstrukora(String opis, double postotak)
@@ -130,6 +132,7 @@ namespace TestCvjecara
         #endregion
 
         #region TestMetodaPoklon
+        //uradila Azra Ahmić(18390)
         [TestMethod]
         public void TestGeterŠifraPoklona()
         {
@@ -138,6 +141,7 @@ namespace TestCvjecara
         #endregion
 
         #region PomoćneMetode
+
         public static IEnumerable<object[]> UčitajPodatkeCSV()
         {
             using (var reader = new StreamReader("PoklonNeispravni.csv"))
