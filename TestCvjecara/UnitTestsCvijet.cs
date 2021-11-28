@@ -28,7 +28,7 @@ namespace TestCvjecara
             }
         }
         Cvijet c1, c2, c3, c4, c5, c6;
-
+        //Uradila Nedina Muratović
         [TestInitialize]
         public void InicijalizacijaPrijeSvakogTesta()
         {
@@ -69,39 +69,44 @@ namespace TestCvjecara
         {
             c1.LatinskoIme = "Rosa";
         }
-
+        //Radila Nedina Muratovic
         [TestMethod]
         public void TestNajboljaSvježinaCvijeća()
         {
             Assert.AreEqual(c1.OdrediSvježinuCvijeća(), 5.0);
 
         }
+        //Uradila Nedina Muratović
         [TestMethod]
         public void TestSmanjeneSvjezineOrhideja()
         {
             Assert.AreEqual(c2.OdrediSvježinuCvijeća(), 4.5);
         }
-
+        //Uradila Nedina Muratović
         [TestMethod]
         public void TestSmanjeneSvjezineLjiljan()
         {
             Assert.AreEqual(c3.OdrediSvježinuCvijeća(), 2.6);
         }
+        //Uradila Nedina Muratović
         [TestMethod]
         public void TestSmanjeneSvjezineMargarete()
         {
             Assert.AreEqual(c4.OdrediSvježinuCvijeća(), 3.4);
         }
+        //Uradila Nedina Muratovic
         [TestMethod]
         public void TestSmanjeneSvjezineRuza()
         {
             Assert.AreEqual(c6.OdrediSvježinuCvijeća(), 3.4);
         }
+        //uradila Nedina Muratovic
         [TestMethod]
         public void TestSmanjeneSvjezineNevena()
         {
             Assert.AreEqual(c5.OdrediSvježinuCvijeća(), 4.4);
         }
+        //uradila Nedina Muratovic
         [TestMethod]
         public void TestSvjezinaNula()
         {

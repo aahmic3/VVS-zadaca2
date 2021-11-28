@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\Zadatak 2.csproj": {}
+    "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Zadatak 2\\Zadatak 2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj": {
+    "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Cvjecara\\Cvjecara.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Cvjecara\\Cvjecara.csproj",
         "projectName": "Cvjecara",
-        "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj",
-        "packagesPath": "C:\\Users\\azra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Cvjecara\\Cvjecara.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Cvjecara\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\azra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,21 +54,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\Zadatak 2.csproj": {
+    "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Zadatak 2\\Zadatak 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\Zadatak 2.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Zadatak 2\\Zadatak 2.csproj",
         "projectName": "Zadatak 2",
-        "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\Zadatak 2.csproj",
-        "packagesPath": "C:\\Users\\azra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Zadatak 2\\obj\\",
+        "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Zadatak 2\\Zadatak 2.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Zadatak 2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\azra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj": {
-                "projectPath": "C:\\Users\\azra\\Source\\Repos\\aahmic\\Cvjecara\\Cvjecara.csproj"
+              "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Cvjecara\\Cvjecara.csproj": {
+                "projectPath": "C:\\Users\\LENOVO\\Source\\Repos\\VVS-zadaca21\\Cvjecara\\Cvjecara.csproj"
               }
             }
           }
@@ -130,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

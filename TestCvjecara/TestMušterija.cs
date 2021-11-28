@@ -89,7 +89,7 @@ namespace TestCvjecara
             m1.NagradnaKupovina(p1);
 
         }
-
+        //Uradila Nedina Muratović
         [TestMethod]
         public void TestNagradnaKupovinaOstvarena()
         {

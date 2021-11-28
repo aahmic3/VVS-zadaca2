@@ -156,7 +156,7 @@ namespace TestCvjecara
             cvjećara.PregledajCvijeće();
             CollectionAssert.DoesNotContain(cvjećara.Cvijeće, c1);
         }
-
+        //Uradila Nedina Muratović
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void NaručiCvijeceNepostojeciBuket()
@@ -169,7 +169,7 @@ namespace TestCvjecara
             Poklon p = new Poklon("Čokolada", 0.2);
             cvjećara.NaručiCvijeće(m, b, p);
         }
-
+        //Uradila: Nedina Muratović
         [TestMethod]
         public void NaručiCvijece()
         {
@@ -183,7 +183,7 @@ namespace TestCvjecara
             cvjećara.NaručiCvijeće(m1,buketi[0] , p);
             Assert.IsTrue(cvjećara.NaručeniPokloni.Contains(p));
         }
-
+        //Uradila Nedina Muratović
         [TestMethod]
         [ExpectedException(typeof(FormatException))]
         public void TestPokloni()
