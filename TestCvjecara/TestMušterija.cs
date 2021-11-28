@@ -91,7 +91,7 @@ namespace TestCvjecara
             m1.NagradnaKupovina(p1);
 
         }
-        //Uradila Nedina Muratović
+        
         [TestMethod]
         public void TestNagradnaKupovinaOstvarena()
         {
@@ -101,7 +101,7 @@ namespace TestCvjecara
             }
             Assert.IsTrue(m2.NagradnaKupovina(p1));
         }
-
+        //Uradila Nedina Muratović
         [TestMethod]
         public void TestNagradnaKupovinaOstvarenaZaVelikiBroj()
         {

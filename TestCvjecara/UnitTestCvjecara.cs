@@ -41,7 +41,7 @@ namespace TestCvjecara
             cvjećara.RadSaCvijećem(c1, 4);
 
         }
-
+        //Uradila Nedina Muratovic
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
         public void TestRadSaCvijecemNedefinisanCvijet()
@@ -52,6 +52,7 @@ namespace TestCvjecara
              ruza = new Cvijet(Vrsta.Orhideja, "orhideja", "bijela", DateTime.Now.AddDays(-7), 3);
             
         }
+        //Uradila Nedina Muratovic
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestRadSaCvijećemaDodavanjeistogCvijeta()
@@ -61,6 +62,7 @@ namespace TestCvjecara
             cvjećara.RadSaCvijećem(ruza, 0);
             cvjećara.RadSaCvijećem(ruza, 0);
         }
+        //Uradila Nedina Muratovic
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
         public void TestRadSaCvijećemaDodavanjeCvijeta()
@@ -70,6 +72,7 @@ namespace TestCvjecara
             cvjećara.RadSaCvijećem(ruza, 1);
         
          }
+        //Uradila Nedina Muratovic
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestRadSaCvijećemaIzmjena()
@@ -80,6 +83,7 @@ namespace TestCvjecara
             cvjećara.RadSaCvijećem(ruza, 0);
             cvjećara.RadSaCvijećem(ruza2, 1);
         }
+        //Uradila Nedina Muratovic
         [TestMethod]
         public void TestRadSaCvjecaromObnoviCvijece()
         {
@@ -100,6 +104,7 @@ namespace TestCvjecara
             cvjećara.RadSaCvijećem(ruza, 2);
 
         }
+        //Uradila Nedina Muratovic
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestRadSaCvijećemaBrisanjeCvijetaKoojiNijeUListi()
@@ -110,6 +115,7 @@ namespace TestCvjecara
             cvjećara.RadSaCvijećem(ruza, 0);
             cvjećara.RadSaCvijećem(ruza2, 2);
         }
+        //Uradila Nedina Muratovic
         [TestMethod]
         public void TestRadSaCvjecaromObrisiCvijece()
         {
