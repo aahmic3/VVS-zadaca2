@@ -77,7 +77,7 @@ namespace Cvjecara
         /// <param name="nagrada"></param>
         /// <returns></returns>
        
-        //Uradila Dženeta Ahmić (18482)
+        //Radila Dženeta Ahmić (18482)
         public bool NagradnaKupovina(Poklon nagrada)
         {
             int i, stepen = 10;

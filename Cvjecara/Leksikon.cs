@@ -18,14 +18,15 @@ namespace Cvjecara
             throw new NotImplementedException();
         }
     }
-        public class Spy : ILeksikon
+    //Radila Dženeta Ahmić (18482)
+    public class Spy : ILeksikon
+    {
+        public bool ValidnoLatinskoIme(string ime)
         {
-            public bool ValidnoLatinskoIme(string ime)
-            {
-                List<String> latinskaImena = new List<string> { "Rosa rubiginosa", "Lilum", "Calendula officinalis", "Orchidaceae", "Chrysanthemum" };
-                if (latinskaImena.Contains(ime))
-                    return true;
-                return false;
-            }
+            List<String> latinskaImena = new List<string> { "Rosa rubiginosa", "Lilum", "Calendula officinalis", "Orchidaceae", "Chrysanthemum" };
+            if (latinskaImena.Contains(ime))
+                return true;
+            return false;
         }
     }
+}

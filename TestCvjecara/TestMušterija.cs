@@ -41,6 +41,7 @@ namespace TestCvjecara
             p3 = new Poklon("godišnjica", 0.3);
         }
         #region TestGeteriMušterija
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         public void TestGetUkupranBrojKupovina()
         {
@@ -77,6 +78,7 @@ namespace TestCvjecara
         #endregion
 
         #region TestMetodeMušterija
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         [ExpectedException(typeof(NotSupportedException))]
         public void TestNullBuketIliPoklon()

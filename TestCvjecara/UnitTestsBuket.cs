@@ -48,6 +48,7 @@ namespace TestCvjecara
         #endregion
 
         #region TestMetodeBuket
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         public void TestDodavanjeIspravnihDodatka()
         {

@@ -28,7 +28,6 @@ namespace TestCvjecara
             }
         }
         Cvijet c1, c2, c3, c4, c5, c6;
-        //Uradila Nedina Muratović
         [TestInitialize]
         public void InicijalizacijaPrijeSvakogTesta()
         {
@@ -40,7 +39,8 @@ namespace TestCvjecara
             c6 = new Cvijet(Vrsta.Ruža, "Majska", "Crvena", DateTime.Now.AddDays(-6), 1);
 
         }
-        #region TestKonstruktor
+        #region TestKonstruktor 
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         [DynamicData("CvijetNeisravniCSV")]
         [ExpectedException(typeof(FormatException))]
@@ -48,6 +48,7 @@ namespace TestCvjecara
         {
             Cvijet cvijet = new Cvijet(vrsta, ime, boja, datumBranja, kol);
         }
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         [DynamicData("CvijetIspravniXML")]
         public void TestKonstrukora(Vrsta vrsta, string ime, string boja, DateTime datumBranja, int kol)
@@ -62,27 +63,27 @@ namespace TestCvjecara
         #endregion
 
         #region TestMetode
-
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         [ExpectedException(typeof(FormatException))]
         public void TestIzuzetkaPonovnoPostavljanjeLatinskogImena()
         {
             c1.LatinskoIme = "Rosa";
         }
-        //Radila Nedina Muratovic
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         public void TestNajboljaSvježinaCvijeća()
         {
             Assert.AreEqual(c1.OdrediSvježinuCvijeća(), 5.0);
 
         }
-        //Uradila Nedina Muratović
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         public void TestSmanjeneSvjezineOrhideja()
         {
             Assert.AreEqual(c2.OdrediSvježinuCvijeća(), 4.5);
         }
-        //Uradila Nedina Muratović
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         public void TestSmanjeneSvjezineLjiljan()
         {
@@ -106,7 +107,7 @@ namespace TestCvjecara
         {
             Assert.AreEqual(c5.OdrediSvježinuCvijeća(), 4.4);
         }
-        //uradila Nedina Muratovic
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         public void TestSvjezinaNula()
         {
@@ -141,6 +142,7 @@ namespace TestCvjecara
         #endregion
 
         #region Pomoćne metode
+        //Radila Dženeta Ahmić (18482)
         public static IEnumerable<object[]> UčitajPodatkeCSV()
         {
             using (var reader = new StreamReader("CvijetNeispravni.csv"))

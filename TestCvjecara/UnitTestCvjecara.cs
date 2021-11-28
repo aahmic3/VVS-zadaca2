@@ -90,6 +90,7 @@ namespace TestCvjecara
             cvjećara.RadSaCvijećem(c2, 1);
             CollectionAssert.Contains(cvjećara.Cvijeće, c2);
         }
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
         public void TestRadSaCvijećemBrisanjeNepostojecegCvijeta()
@@ -223,7 +224,7 @@ namespace TestCvjecara
             cvjećara.Mušterije = musterije;
             Assert.AreEqual(cvjećara.DajNajboljuMušteriju().IdentifikacijskiBroj, m1.IdentifikacijskiBroj);
         }
-
+        //Radila Dženeta Ahmić (18482)
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
         public void TestNajboljaMušterijaIzuzetakZbogJednakosti()
